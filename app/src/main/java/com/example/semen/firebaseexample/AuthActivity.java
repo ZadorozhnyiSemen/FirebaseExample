@@ -103,8 +103,10 @@ public class AuthActivity extends AppCompatActivity implements GoogleApiClient.O
 
     @Override
     public void onClick(View v) {
-        if (v == singInButton) {
-            signIn();
+        switch (v.getId()) {
+            case R.id.signInButton :
+                signIn();
+                break;
         }
     }
 
